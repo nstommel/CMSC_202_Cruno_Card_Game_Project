@@ -4,7 +4,7 @@ OBJS = card.o player.o game.o
 NEWOBJS = Cruno8.o CrunoSkip.o CrunoReverse.o CrunoDraw2.o CrunoPlayer.o CrunoGame.o
 SUBMITFILES = mytest.cpp Cruno8.h Cruno8.cpp CrunoSkip.h CrunoSkip.cpp CrunoReverse.h CrunoReverse.cpp CrunoDraw2.h CrunoDraw2.cpp CrunoPlayer.h CrunoPlayer.cpp CrunoGame.h CrunoGame.cpp
 
-all: proj4.out mytest.out
+all: mytest.out
 
 #DERIVED FILES
 mytest.out: mytest.o $(OBJS) $(NEWOBJS)
@@ -32,12 +32,6 @@ CrunoGame.o: CrunoGame.cpp CrunoGame.h CrunoPlayer.h
 	g++ $(CFLAGS) CrunoGame.cpp
 
 #BASE SOURCE FILES
-proj4.out: proj4.o $(OBJS)
-	g++ proj4.o $(OBJS) -o proj4.out
-
-proj4.o: proj4.cpp card.h game.h player.h
-	g++ $(CFLAGS) proj4.cpp
-
 card.o: card.cpp card.h game.h player.h
 	g++ $(CFLAGS) card.cpp
 
