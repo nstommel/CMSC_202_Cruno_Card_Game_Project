@@ -1,5 +1,5 @@
 # CMSC_202_Cruno_Card_Game_Project
-This project implements a card game called Cruno (Crazy 8s plus Uno). More details about the rules are given in the prompt below and are documented in the code.
+This project implements a card game called Cruno (Crazy 8s plus Uno). More details about the rules are given in the prompt below and are documented in the code. Several new classes of cards are added to Crazy 8's from Uno including Skip, Reverse, Wildcard, and Draw 2. This project extends the functionality of a basic cardgame class including players, cards, and the game itself using the derived card classes classes mentioned before as well as a CrunoGame class. mytets.cpp is a test program used to show the results of a game.
 
 # Background
 
